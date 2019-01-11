@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2{font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+p {line-height: 2}
+.bgimg, .bgimg2 {
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.bgimg {background-image: url("https://farm2.staticflickr.com/1946/29907687127_a527dd91fb_k.jpg")}
+.bgimg2 {background-image: url("film-bg.jpg")}
+
+.kp-green {
+  color: #2f2f2f!important;
+  background: #7d8b60;
+}
+.w3-text-grey,
+.w3-hover-text-grey:hover,
+.w3-text-gray,
+.w3-hover-text-gray:hover {
+    color: #9e9e9e!important;
+}
+
+.kp-blue {
+  color: #fff!important;
+  background-color: #607d8d!important;
+}
+.kp-text-darkgray {
+  color: #9e9e9e!important;
+}
+
+.kp-album-layout {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  position: relative;
+  margin: 0em auto;
+  padding: 2em 0em;
+}
+.album-wrap-kp {
+    width: 50%;
+    padding: 1em;
+}
+#poems p {
+  line-height: 1em;
+}
+#poems span {
+  display: block;
+}
+.w3-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .bgimg {
+    background-image: url("mobile-gp-hero.jpg");
+  }
+  .w3-display-middle {
+    width: 90%;
+  }
+  .kp-album-layout {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    position: relative;
+    margin: 0em auto;
+    padding: 2em 0em;
+  }
+  .album-wrap-kp {
+      width: 100%;
+      padding: 1em;
+  }
+}
+</style>
+<body>
+
+<!-- Header / Home-->
+<header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-text-white w3-center">
+    <h1 class="w3-jumbo">HAPPY 80TH!</h1>
+    <h2>Jack, Dad, Grandpa...</h2>
+    <h2><b>September 27th</b></h2>
+  </div>
+</header>
+
+<!-- Navbar (sticky bottom) -->
+<div class="w3-bottom w3-hide-small">
+  <div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
+    <a href="#home" style="width:25%" class="w3-bar-item w3-button">Home</a>
+    <a href="#video" style="width:25%" class="w3-bar-item w3-button">Video</a>
+    <a href="#images" style="width:25%" class="w3-bar-item w3-button">Images</a>
+    <a href="#poems" style="width:25%" class="w3-bar-item w3-button w3-hover-black">Poems</a>
+  </div>
+</div>
+
+<!-- About / Jane And John -->
+<div class="w3-container w3-padding-64 kp-green w3-grayscale-min" id="video">
+  <div class="w3-content">
+    <h2 class="w3-center w3-text-grey"><b>80 Years Loved!</b></h2>
+    <div style="padding:56.25% 0 0 0;position:relative;">
+      <iframe src="https://player.vimeo.com/video/291218323?color=ffffff&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+    <p class="w3-center"><i>A video celebrating 80 years of love! Share it by clicking the button below:</i>
+    </p><br>
+    <p class="w3-center"><a href="https://vimeo.com/user53077269" target="_blank" class="w3-button w3-black w3-round w3-padding-large w3-large">Share This Video</a></p>
+  </div>
+</div>
+
+<!-- Background photo -->
+<div class="w3-display-container bgimg2" id="images">
+  <div class="kp-text-darkgray w3-center kp-album-layout">
+    <div class="album-wrap-kp">
+      <h2 class="w3-center w3-text-grey albums-kp">NANA & GRANDPA</h2><br>
+      <div id="flickrembed_44" class="albums-kp"></div>
+      <script src='https://flickrembed.com/embed_v2.js.rand.php?container=flickrembed_44&source=flickr&layout=responsive&input=www.flickr.com/photos/157832203@N04/albums/72157677607963818&sort=3&by=album&theme=default&scale=fit&speed=3000&limit=100&skin=default&autoplay=true'></script>
+      <script type="text/javascript">function showpics(){var a=$("#box").val();$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?tags="+a+"&tagmode=any&format=json&jsoncallback=?",function(a){$("#images").hide().html(a).fadeIn("fast"),$.each(a.items,function(a,e){$("<img/>").attr("src",e.media.m).appendTo("#images")})})}</script>
+    </div>
+    <div class="album-wrap-kp">
+    <h2 class="w3-center w3-text-grey albums-kp">JACK, MB & KEVIN</h2><br>
+      <div id="flickrembed_65" class="albums-kp"></div>
+      <script src='https://flickrembed.com/embed_v2.js.rand.php?container=flickrembed_65&source=flickr&layout=responsive&input=www.flickr.com/photos/157832203@N04/albums/72157704147874741&sort=3&by=album&theme=default&scale=fit&speed=3000&limit=100&skin=default&autoplay=true'></script>
+      <script type="text/javascript">function showpics(){var a=$("#box").val();$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?tags="+a+"&tagmode=any&format=json&jsoncallback=?",function(a){$("#images").hide().html(a).fadeIn("fast"),$.each(a.items,function(a,e){$("<img/>").attr("src",e.media.m).appendTo("#images")})})}</script>
+    </div>
+    <div class="album-wrap-kp">
+      <h2 class="w3-center w3-text-grey albums-kp">GRANDCHILDREN</h2><br>
+      <div id="flickrembed_15" class="albums-kp"></div>
+      <script src='https://flickrembed.com/embed_v2.js.rand.php?container=flickrembed_15&source=flickr&layout=responsive&input=www.flickr.com/photos/157832203@N04/albums/72157674165639858&sort=0&by=album&theme=default_notextpanel&scale=fit&speed=3000&limit=100&skin=default&autoplay=true'></script>
+      <script type="text/javascript">function showpics(){var a=$("#box").val();$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?tags="+a+"&tagmode=any&format=json&jsoncallback=?",function(a){$("#images").hide().html(a).fadeIn("fast"),$.each(a.items,function(a,e){$("<img/>").attr("src",e.media.m).appendTo("#images")})})}</script>
+    </div>
+    <div class="album-wrap-kp">
+      <h2 class="w3-center w3-text-grey albums-kp">CHRISTMAS WITH THE COSGROVES</h2><br>
+      <div id="flickrembed_48" class="albums-kp"></div>
+      <script src='https://flickrembed.com/embed_v2.js.rand.php?container=flickrembed_48&source=flickr&layout=responsive&input=www.flickr.com/photos/157832203@N04/albums/72157701872365794&sort=0&by=album&theme=default_notextpanel&scale=fit&speed=3000&limit=100&skin=default&autoplay=true'></script>
+      <script type="text/javascript">function showpics(){var a=$("#box").val();$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?tags="+a+"&tagmode=any&format=json&jsoncallback=?",function(a){$("#images").hide().html(a).fadeIn("fast"),$.each(a.items,function(a,e){$("<img/>").attr("src",e.media.m).appendTo("#images")})})}</script>
+    </div>
+    <div class="album-wrap-kp">
+      <h2 class="w3-center w3-text-grey albums-kp">EXTENDED FAMILY</h2><br>
+      <div id="flickrembed_17" class="albums-kp"></div>
+      <script src='https://flickrembed.com/embed_v2.js.rand.php?container=flickrembed_17&source=flickr&layout=responsive&input=www.flickr.com/photos/157832203@N04/albums/72157701872207684&sort=0&by=album&theme=default_notextpanel&scale=fit&speed=3000&limit=100&skin=default&autoplay=true'></script>
+      <script type="text/javascript">function showpics(){var a=$("#box").val();$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?tags="+a+"&tagmode=any&format=json&jsoncallback=?",function(a){$("#images").hide().html(a).fadeIn("fast"),$.each(a.items,function(a,e){$("<img/>").attr("src",e.media.m).appendTo("#images")})})}</script>
+    </div>
+  </div>
+</div>
+
+<!-- Wedding information -->
+<div class="w3-container w3-padding-64 kp-green w3-grayscale-min w3-center" id="poems">
+  <div class="w3-content">
+    <h3 class="w3-text-grey"><b>POEM</b></h3>
+    <div class="w3-row">
+      <div class="w3-half">
+        <h2>Inside a Rainbow</h2>
+        <p>
+          <span>I stepped inside a rainbow</span>
+          <span>In a distant foreign land</span>
+          <span>At the edge of heaven’s reflection</span>
+          <span>In a place some call Ireland</span>
+        </p>
+
+        <p>There the spirit of my history took me gently in its hand</p>
+
+        <p>
+          <span>My feet were firmly planted on this strangely familiar ground</span>
+          <span>Where my ancestors walked before me long before America was found</span>
+        </p>
+
+        <p>
+          <span>My heart and mind were filled with all the visions of the past</span>
+          <span>As I wondered just how long this miracle would last</span>
+        </p>
+
+        <p>
+          <span>I felt a strength and happiness and all of life’s great joys</span>
+          <span>As I gazed upon the radiant faces of all of history’s little girls and boys</span>
+        </p>
+
+        <p>
+          <span>Then suddenly I realized why my life has been such a joy</span>
+          <span>I’ve been living in a rainbow since first I was a boy</span>
+        </p>
+
+        <p>
+          <span>I have know life’s greatest pleasure, that of family and of friends</span>
+          <span>You see that’s the special prize at one of rainbows ends</span>
+          <span>And then the joy of the universe cause my soul to sigh</span>
+          <span>As I followed all of those brilliant colors as they reached into the sky</span>
+        </p>
+
+        <p>
+          <span>My mind then embraced the notion of what I could take home</span>
+          <span>And it raced to capture all the visions and the verses that would soon become this poem</span>
+        </p>
+
+        <p>
+          <span>So come into my rainbow</span>
+          <span>Ahh I’ve had it long enough</span>
+          <span>I’ll teach you how to use it</span>
+          <span>It will help to lift you up</span>
+        </p>
+
+        <p>
+          <span>Now look out through our rainbow</span>
+          <span>Do it for a while</span>
+          <span>The longer that you look</span>
+          <span>The more it makes you smile</span>
+        </p>
+
+        <p>
+          <span>Over there!</span>
+          <span>Do you see that special glow</span>
+          <span>Ahh now that’s the part that helps you as you grow</span>
+          <span>And there – over there!</span>
+          <span>Do you see the extra gleam</span>
+          <span>Now that’s the part that helps you when you dream</span>
+          <span>There are seven colors in a rainbow</span>
+          <span>But you are the eighth in mine</span>
+          <span>You’re the extra color in my rainbow</span>
+          <span>You’re the bit that makes it shine</span>
+        </p>
+
+        <p>
+          <span>So come in and stand beside me</span>
+          <span>Here – close enough to hold my hand</span>
+          <span>I know you’re going to like it</span>
+          <span>I’ve been here since time began</span>
+        </p>
+
+        <p>
+          <span>And now I’ll share the rainbow’s special secret</span>
+          <span>I’ll tell you where happiness can be found</span>
+          <span>It’s at the other end of our rainbow</span>
+          <span>Where ever it touches the ground</span>
+        </p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- RSVP section -->
+<div class="w3-container w3-padding-64 kp-green w3-center w3-wide" >
+  <h3>NEED A PHOTO OR THE VIDEO?</h3>
+  <p class="w3-xlarge">
+    <a href="mailto:kpmohr@gmail.com?Subject=Family%20Photos%20%26%20Video&Body=Please%20send%20me%20family%20photos%20and%20video%21%20" class="w3-button w3-round kp-blue w3-opacity w3-hover-opacity-off" style="padding:8px 60px">Email Me</a>
+  </p>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>KPM Designs</p>
+</footer>
+<div class="w3-hide-small" style="margin-bottom:32px"> </div>
+
+</body>
+</html>
+
+<script src="https://player.vimeo.com/api/player.js"></script>
